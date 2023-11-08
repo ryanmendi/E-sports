@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luta</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: rgb(54, 54, 54);
+        }
+
+        nav {
+            background-color: black;
+            text-align: center;
+        }
+
+        nav ul {
+            display: inline-flex;
+            list-style: none;
+        }
+
+        nav li {
+            width: 120px;
+            margin: 5px;
+            padding: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .submenu {
+            display: none;
+        }
+
+        nav ul li:hover .submenu {
+            display: block;
+            position: absolute;
+            background-color: black;
+            margin-top: 15px;
+            margin-left: -38px;
+        }
+
+        nav ul li:hover .submenu ul {
+            display: block;
+        }
+
+        nav ul li:hover .submenu ul li {
+            width: 150px;
+            text-align: center;
+            border-radius: 10px;
+            transition: 0.8s;
+        }
+
+        nav ul li:hover .submenu ul li:hover {
+            background-color: rgb(80, 80, 80);
+        }
+
+        h1 {
+            color: white;
+            font-size: 40px;
+            margin-left: 30px;
+            margin-top: 70px;
+        }
+
+        .e-sports {
+            text-decoration: underline rgb(255, 8, 0);
+            color: white;
+            margin-left: 30px;
+            font-size: 20px;
+            margin-top: 2px;
+        }
+
+        p {
+            color: white;
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 15px;
+            margin-right: 70rem;
+        }
+
+        .card {
+            width: 325px;
+            background-color: #949494;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .conteudo {
+            padding: 16px;
+        }
+
+        .conteudo h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .conteudo p {
+            color: #ffffff;
+            font-size: 15px;
+            line-height: 1.3;
+
+        }
+
+        .conteudo .square {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: rgb(80, 80, 80);
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 16px;
+            color: #ffffff;
+        }
+        .container2{
+            max-width: 700px;
+        }
+        .video{
+            width: 100%;
+            padding-top: 56.25%;
+            position: relative;
+        }
+        .video iframe{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top:0;
+            border-radius: 10px;
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="#">Categorias▼</a>
+
+                <div class="submenu">
+                    <ul>
+                        <li><a href="moba.html">Moba</a></li>
+                        <li><a href="fps.html">Fps</a></li>
+                        <li><a href="luta.html">Luta</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li><a href="org.html">Organizações</a></li>
+            <li><a href="jogos.html">Jogos</a></li>
+        </ul>
+    </nav>
+    <h1>LUTA</h1>
+    <P class="e-sports">Como são os jogos de Luta?</P>
+    <p>Jogos de luta creio que é uma das categoria mais conhecida dos jogos por conta de ser simples e facil de jogar,
+        mas de qualquer <br>
+        forma há muitos jogos desta categoria que se concorre a premios. A maioria desses jogos tem semelhanças nas
+        regras mas grande diferença<br>
+        na jogabilidade e nos personagens.<br>
+        Os jogadores devem dominar técnicas como bloquear, contra-atacar e encadear ataques em "combos" assim tentando
+        vencer seu oponente de forma<br>
+        que tire mais vida dele.</p>
+        <br>
+    <P class="e-sports">quais são os jogos de luta mais jogados?</P>
+    <div class="card-container">
+        <div class="card">
+            <img src="img/tekken.jfif" alt="tekken 7">
+            <div class="conteudo">
+                <h2>tekken 7</h2>
+                <p>Tekken 7 é um jogo eletrônico de luta desenvolvido e publicado pela Bandai Namco Entertainment. É o
+                    nono jogo da série de luta Tekken, sendo o primeiro a utilizar o motor de jogo Unreal Engine 4.
+                    Sendo lançado no dia 2 de Julho de 2016. Este marca os vinte anos de Tekken.</p>
+                <a href="https://store.steampowered.com/app/389730/TEKKEN_7/" class="square">Veja Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/SF.png" alt="Street fight">
+            <div class="conteudo">
+                <h2>Street Fight</h2>
+                <p>Street Fighter, popularmente abreviado para SF, é uma série de jogos de luta desenvolvida pela
+                    fabricante japonesa de jogos eletrônicos Capcom.</p>
+                <a href="https://store.steampowered.com/app/1364780/Street_Fighter_6/" class="square">Veja Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/MK.png" alt="Mortal Kombat">
+            <div class="conteudo">
+                <h2>Mortal Kombat</h2>
+                <p>Mortal Kombat é uma franquia de mídia centrada em uma série de videogames de luta originalmente
+                    desenvolvidos pela Midway Games em 1992. Em 2011, depois da falência da Midway, a produção de Mortal
+                    Kombat foi adquirida pela Warner Bros. Games, com o desenvolvimento da NetherRealm Studios.</p>
+                <a href="https://store.steampowered.com/app/1971870/Mortal_Kombat_1/" class="square">Veja Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/db.png" alt="Street fight">
+            <div class="conteudo">
+                <h2>dragonball Fighter Z</h2>
+                <p>Dragon Ball FighterZ é um jogo da franquia Dragon Ball, desenvolvido pela Arc System Works é
+                    publicado pela Bandai Namco Entertainment para PlayStation 4, Xbox One, Nintendo Switch e Microsoft
+                    Windows via Steam. Sua data de lançamento foi em janeiro de 2018.</p>
+                <a href="https://store.steampowered.com/app/678950/DRAGON_BALL_FighterZ/" class="square">Veja Mais</a>
+            </div>
+        </div>
+    </div>
+    <p class="e-sports">Momentos de jogos de luta no E-sports</p>
+    <P>A Evolution Championship Series, comumente conhecido como Evo, é uma competição anual de esporte eletrônico que
+        se foca exclusivamente em jogos de luta.<br> Os torneios são totalmente abertos e usam o formato de dupla
+        eliminação. Neste mesmo campeonato em 2004, surgiu uma jogada de um jogador nomeado daigo aonde ele deu parry<br>
+        (um tipo de esquiva do jogo) em um especial de um personagem e contra atacou assim ganhando.
+    </P>
+    <div class="container2">
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/JzS96auqau0?si=pMEnBE3YIXTM_NQk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+
+</html>

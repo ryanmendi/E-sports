@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moba</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: rgb(54, 54, 54);
+        }
+
+        nav {
+            background-color: black;
+            text-align: center;
+        }
+
+        nav ul {
+            display: inline-flex;
+            list-style: none;
+        }
+
+        nav li {
+            width: 120px;
+            margin: 5px;
+            padding: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .submenu {
+            display: none;
+        }
+
+        nav ul li:hover .submenu {
+            display: block;
+            position: absolute;
+            background-color: black;
+            margin-top: 15px;
+            margin-left: -38px;
+        }
+
+        nav ul li:hover .submenu ul {
+            display: block;
+        }
+
+        nav ul li:hover .submenu ul li {
+            width: 150px;
+            text-align: center;
+            border-radius: 10px;
+            transition: 0.8s;
+        }
+
+        nav ul li:hover .submenu ul li:hover {
+            background-color: rgb(80, 80, 80);
+        }
+
+        h1 {
+            color: white;
+            font-size: 40px;
+            margin-left: 30px;
+            margin-top: 70px;
+        }
+
+        .e-sports {
+            text-decoration: underline rgb(255, 8, 0);
+            color: white;
+            margin-left: 30px;
+            font-size: 20px;
+            margin-top: 2px;
+        }
+
+        p {
+            color: white;
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+
+        .container {
+            padding: 2rem;
+            margin-right: 70rem;
+        }
+
+        .slider-wrapper {
+            position: relative;
+            max-width: 48rem;
+            margin: 0 auto;
+        }
+
+        .slider {
+            display: flex;
+            aspect-ratio: 16 / 9;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+            border-radius: 0.5rem;
+            -ms-overflow-style: none;
+            /* Esconde o scrollbar no IE e no Edge */
+            scrollbar-width: none;
+            /* esconde o scrollbar no Firefox */
+        }
+
+        /* Esconde o scrolbar no opera */
+        .slider::-webkit-scrollbar {
+            display: none;
+        }
+
+        .slider img {
+            flex: 1 0 100%;
+            scroll-snap-align: start;
+            object-fit: cover;
+        }
+
+        .slider-nav {
+            display: flex;
+            column-gap: 1rem;
+            position: absolute;
+            bottom: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .slider-nav a {
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background-color: #fff;
+            opacity: 0.75;
+            transition: opacity ease 250ms;
+        }
+
+        .slider-nav a:hover {
+            opacity: 1;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 15px;
+            margin-right: 70rem;
+        }
+
+        .card {
+            width: 325px;
+            background-color: #949494;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .conteudo {
+            padding: 16px;
+        }
+
+        .conteudo h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .conteudo p {
+            color: #ffffff;
+            font-size: 15px;
+            line-height: 1.3;
+
+        }
+
+        .conteudo .square {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: rgb(80, 80, 80);
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 16px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="#">Categorias▼</a>
+
+                <div class="submenu">
+                    <ul>
+                        <li><a href="moba.html">Moba</a></li>
+                        <li><a href="fps.html">Fps</a></li>
+                        <li><a href="luta.html">Luta</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li><a href="org.html">Organizações</a></li>
+            <li><a href="jogos.html">Jogos</a></li>
+        </ul>
+    </nav>
+    <h1>MOBA</h1>
+    <p class="e-sports">O que é MOBA?</p>
+    <p>MOBA (Multiplayer Online Battle Arena) é um gênero de videogame onde duas equipes de jogadores competem em arenas
+        virtuais,<br>
+        controlando personagens únicos com habilidades distintas. O objetivo principal é destruir a base inimiga, mas
+        também podem<br>
+        haver objetivos secundários. Os MOBAs exigem estratégia em equipe, comunicação e coordenação, e são populares em
+        eSports.<br>
+        Exemplos conhecidos incluem "League of Legends," "Dota 2" e "Heroes of the Storm."</p>
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1" src="img/moba1.png" alt="esquema de lol" />
+                <img id="slide-2" src="img/moba2.png" alt="mapa lol" />
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+            </div>
+        </div>
+    </section>
+    <p class="e-sports">Jogos mais jogados da categoria MOBA</p>
+    <div class="card-container">
+        <div class="card">
+            <img src="img/lol.png" alt="r6">
+            <div class="conteudo">
+                <h2>League of Legends</Legend>
+                </h2>
+                <p>League of Legends é um jogo eletrônico do gênero multiplayer online battle arena desenvolvido e
+                    publicado pela Riot Games. Foi lançado em outubro de 2009 para Microsoft Windows e em março de 2013
+                    para macOS.</p>
+                <a href="https://www.leagueoflegends.com/pt-br/how-to-play/" class="square">Veja Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/dota2.png" alt="vava">
+            <div class="conteudo">
+                <h2>Dota 2</h2>
+                <p>Dota 2 é um jogo eletrônico do gênero multiplayer online battle arena desenvolvido e publicado pela
+                    Valve. Lançado em 2013, o jogo é uma sequência de Defense of the Ancients, uma modificação criada
+                    pela comunidade para o jogo Warcraft III: Reign of Chaos, da Blizzard Entertainment. </p>
+                <a href="https://store.steampowered.com/app/570/Dota_2/" class="square">Veja Mais</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

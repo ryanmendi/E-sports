@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(54, 54, 54);
+        }
+
+        h1 {
+            margin-left: 30px;
+        }
+
+        .origin {
+            text-decoration: underline rgb(255, 0, 0);
+            font-size: 20px;
+            margin-left: 30px;
+        }
+
+        p {
+            margin-left: 30px;
+            color: white;
+        }
+
+        h1 {
+            color: white;
+            font-size: 40px;
+            margin-left: 30px;
+            margin-top: 70px;
+        }
+
+        nav {
+            background-color: black;
+            text-align: center;
+        }
+
+        nav ul {
+            display: inline-flex;
+            list-style: none;
+        }
+
+        nav li {
+            width: 120px;
+            margin: 5px;
+            padding: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .submenu {
+            display: none;
+        }
+
+        nav ul li:hover .submenu {
+            display: block;
+            position: absolute;
+            background-color: black;
+            margin-top: 15px;
+            margin-left: -38px;
+        }
+
+        nav ul li:hover .submenu ul {
+            display: block;
+        }
+
+        nav ul li:hover .submenu ul li {
+            width: 150px;
+            text-align: center;
+            border-radius: 10px;
+            transition: 0.8s;
+            ;
+        }
+
+        nav ul li:hover .submenu ul li:hover {
+            background-color: rgb(80, 80, 80);
+        }
+
+        .container {
+            padding: 2rem;
+            margin-right: 70rem;
+        }
+
+        .slider-wrapper {
+            position: relative;
+            max-width: 48rem;
+            margin: 0 auto;
+        }
+
+        .slider {
+            display: flex;
+            aspect-ratio: 16 / 9;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+            border-radius: 0.5rem;
+            -ms-overflow-style: none;
+            /* Esconde o scrollbar no IE e no Edge */
+            scrollbar-width: none;
+            /* esconde o scrollbar no Firefox */
+        }
+
+        /* Esconde o scrolbar no opera */
+        .slider::-webkit-scrollbar {
+            display: none;
+        }
+
+        .slider img {
+            flex: 1 0 100%;
+            scroll-snap-align: start;
+            object-fit: cover;
+        }
+
+        .slider-nav {
+            display: flex;
+            column-gap: 1rem;
+            position: absolute;
+            bottom: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .slider-nav a {
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background-color: #fff;
+            opacity: 0.75;
+            transition: opacity ease 250ms;
+        }
+
+        .slider-nav a:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="#">Categorias▼</a>
+
+                <div class="submenu">
+                    <ul>
+                        <li><a href="moba.html">Moba</a></li>
+                        <li><a href="fps.html">Fps</a></li>
+                        <li><a href="luta.html">Luta</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li><a href="org.html">Organizações</a></li>
+            <li><a href="jogos.html">Jogos</a></li>
+        </ul>
+    </nav>
+    <h1>História do E-sports</h1>
+    <p class="origin">Origem</p>
+    <p> Os E-sports tem origem na década de 70 na universidade de Stamford, na Califórnia, foi um torneio entre os
+        estudantes da faculdade,<br>
+        o nome do torneio era "Olimpíadas Intergaláticas de Spacewar", que tinha como prêmio 1 ano de assinatura da
+        revista Rolling Stone.</p>
+    <p> Oito anos após em 1980, uma das meiores empresas de jogos da época a Atari, organizou o Space Invaders
+        Championship. Foi um grande<br>
+        sucesso, houve mais de 10 mil participantes de várias partes do Estados Unidos.</p>
+    <p> Em 1990, Foi criado o Nintendo World Championships, com várias etápas no país inteiro e com a final na
+        Califórnia, quatro anos depois<br>
+        foi criada a segunda edição, a Nintendo PowerFest 94.</p>
+    <p> Com a chegada dos anos 2000, e consequentemente a chegada da internet e a banda larga no mundo, essas
+        competições foram ficando cada vez<br>
+        maiores. Pode se considerar que os anos 2000 foi a época de ouro pro desenvolvimento dos E-sports no mundo,
+        junto com a popularização das <br>
+        Lan Houses, muitas pessoas começaram a conhecer esse novo mundo de jogos e assim foi se popularizando.</p>
+
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1" src="img/lan.png" alt="Estadio o iberapuera" />
+                <img id="slide-2" src="img/cs1_6.png" alt="liquid ganhando o mundial de 2018" />
+                <img id="slide-3" src="img/alagado.png" alt="careca beijando o trofeu" />
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

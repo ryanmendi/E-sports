@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: rgb(54, 54, 54);
+        }
+
+        nav {
+            background-color: black;
+            text-align: center;
+        }
+
+        nav ul {
+            display: inline-flex;
+            list-style: none;
+        }
+
+        nav li {
+            width: 120px;
+            margin: 5px;
+            padding: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .submenu {
+            display: none;
+        }
+
+        nav ul li:hover .submenu {
+            display: block;
+            position: absolute;
+            background-color: black;
+            margin-top: 15px;
+            margin-left: -38px;
+        }
+
+        nav ul li:hover .submenu ul {
+            display: block;
+        }
+
+        nav ul li:hover .submenu ul li {
+            width: 150px;
+            text-align: center;
+            border-radius: 10px;
+            transition: 0.8s;
+        }
+
+        nav ul li:hover .submenu ul li:hover {
+            background-color: rgb(80, 80, 80);
+        }
+
+        img {
+            height: 500px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 100px;
+        }
+
+        .card {
+            width: 325px;
+            background-color: #949494;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .conteudo {
+            padding: 16px;
+        }
+
+        .conteudo h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .conteudo p {
+            color: #ffffff;
+            font-size: 15px;
+            line-height: 1.3;
+
+        }
+
+        .conteudo .square {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: rgb(80, 80, 80);
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 16px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="#">Categorias▼</a>
+
+                <div class="submenu">
+                    <ul>
+                        <li><a href="moba.html">Moba</a></li>
+                        <li><a href="fps.html">Fps</a></li>
+                        <li><a href="luta.html">Luta</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li><a href="org.html">Organizações</a></li>
+            <li><a href="jogos.html">Jogos</a></li>
+        </ul>
+    </nav>
+    <div class="card-container">
+        <div class="card">
+            <img src="img/r6.png" alt="r6">
+            <div class="conteudo">
+                <h2>Rainbow six</h2>
+                <p>Tom Clancy's Rainbow Six Siege é um videojogo do género first person shooter produzido pela Ubisoft
+                    Montreal. Foi anunciado pela Ubisoft a 9 de Junho de 2014 na Electronic Entertainment Expo 2014 onde
+                    foi muito aplaudido pela crítica. Foi lançado para Xbox One, PlayStation 4 e para Microsoft Windows.
+                </p>
+                <a href="https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/" class="square">Veja
+                    Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/vlrt.png" alt="vava">
+            <div class="conteudo">
+                <h2>Valorant</h2>
+                <p>Valorant é um jogo eletrônico multijogador gratuito para jogar de tiro em primeira pessoa
+                    desenvolvido e publicado pela Riot Games.</p>
+                <a href="https://playvalorant.com/pt-br/?gad=1&gclid=CjwKCAjw7oeqBhBwEiwALyHLM3fjnFOJYNcVBrqsAKkP_fnAwjGQNYms2WSydK0q571E81wzpjyNvxoCl64QAvD_BwE&gclsrc=aw.ds"
+                    class="square">Veja Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/lol.png" alt="lol">
+            <div class="conteudo">
+                <h2>League of Legends</h2>
+                <p>League of Legends é um jogo eletrônico do gênero multiplayer online battle arena desenvolvido e
+                    publicado pela Riot Games. Foi lançado em outubro de 2009 para Microsoft Windows e em março de 2013
+                    para macOS.</p>
+                <a href="https://www.leagueoflegends.com/pt-br/how-to-play/" class="square">Veja Mais</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <img src="img/cs2.png" alt="cs">
+            <div class="conteudo">
+                <h2>CS-2</h2>
+                <p>Counter-Strike 2 é um jogo tático multijogador de tiro em primeira pessoa de 2023 desenvolvido e
+                    publicado pela Valve. É a quinta parcela principal da série Counter-Strike.</p>
+                <a href="https://store.steampowered.com/app/730/CounterStrike_2/" class="square">Veja Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/SF.png" alt="Street fight">
+            <div class="conteudo">
+                <h2>Street Fight</h2>
+                <p>Street Fighter, popularmente abreviado para SF, é uma série de jogos de luta desenvolvida pela
+                    fabricante japonesa de jogos eletrônicos Capcom.</p>
+                <a href="https://store.steampowered.com/app/1364780/Street_Fighter_6/" class="square">Veja Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/MK.png" alt="Mortal Kombat">
+            <div class="conteudo">
+                <h2>Mortal Kombat</h2>
+                <p>Mortal Kombat é uma franquia de mídia centrada em uma série de videogames de luta originalmente
+                    desenvolvidos pela Midway Games em 1992. Em 2011, depois da falência da Midway, a produção de Mortal
+                    Kombat foi adquirida pela Warner Bros. Games, com o desenvolvimento da NetherRealm Studios.</p>
+                <a href="https://store.steampowered.com/app/1971870/Mortal_Kombat_1/" class="square">Veja Mais</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

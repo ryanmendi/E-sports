@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizações</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: rgb(54, 54, 54);
+        }
+
+        nav {
+            background-color: black;
+            text-align: center;
+        }
+
+        nav ul {
+            display: inline-flex;
+            list-style: none;
+        }
+
+        nav li {
+            width: 120px;
+            margin: 5px;
+            padding: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .submenu {
+            display: none;
+        }
+
+        nav ul li:hover .submenu {
+            display: block;
+            position: absolute;
+            background-color: black;
+            margin-top: 15px;
+            margin-left: -38px;
+        }
+
+        nav ul li:hover .submenu ul {
+            display: block;
+        }
+
+        nav ul li:hover .submenu ul li {
+            width: 150px;
+            text-align: center;
+            border-radius: 10px;
+            transition: 0.8s;
+        }
+
+        nav ul li:hover .submenu ul li:hover {
+            background-color: rgb(80, 80, 80);
+        }
+
+        h1 {
+            color: white;
+            font-size: 40px;
+            margin-left: 30px;
+            margin-top: 70px;
+        }
+
+        .e-sports {
+            text-decoration: underline rgb(255, 8, 0);
+            color: white;
+            margin-left: 30px;
+            font-size: 20px;
+            margin-top: 2px;
+        }
+
+        p {
+            color: white;
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 100px;
+        }
+
+        .card {
+            width: 325px;
+            background-color: #949494;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .conteudo {
+            padding: 16px;
+        }
+
+        .conteudo h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .conteudo p {
+            color: #ffffff;
+            font-size: 15px;
+            line-height: 1.3;
+
+        }
+
+        .conteudo .square {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: rgb(80, 80, 80);
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 16px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="#">Categorias▼</a>
+
+                <div class="submenu">
+                    <ul>
+                        <li><a href="moba.html">Moba</a></li>
+                        <li><a href="fps.html">Fps</a></li>
+                        <li><a href="luta.html">Luta</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li><a href="org.html">Organizações</a></li>
+            <li><a href="jogos.html">Jogos</a></li>
+        </ul>
+    </nav>
+    <h1>Organizações</h1>
+    <center>
+        <p class="e-sports">Organizações Brasileras</p>
+    </center>
+    <div class="card-container">
+        <div class="card">
+            <img src="img/loud.png" alt="loud">
+            <div class="conteudo">
+                <h2>LOUD</h2>
+                <p>LOUD é uma empresa de jogos e estilo de vida focada em construir uma marca ao redor de conteúdos de
+                    jogos, e-sports, estilo de vida, vestuário e aplicações sociais para a geração digital.</p>
+                <a href="img/verdão.png" class="square">Veja
+                    Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/furia.png" alt="furia">
+            <div class="conteudo">
+                <h2>Furia</h2>
+                <p>Em 2017, nasceu um sonho. André Akkari, Jaime Pádua e Cris Guedes fundaram a FURIA com um propósito
+                    claro em mente: representar o Brasil no cenário competitivo de Counter-Strike. Era o início de uma
+                    jornada épica.</p>
+                <a href="https://www.furia.gg/" class="square">Veja Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/redcan.png" alt="red canids">
+            <div class="conteudo">
+                <h2>Red canids</h2>
+                <p>RED Canids Kalunga é uma organização de esportes eletrônicos brasileira criada com a aquisição da
+                    equipe da INTZ Red pelo empresário Felippe Corradini em 2015. </p>
+                <a href="https://twitter.com/REDCanids?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                    class="square">Veja Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/pain.png" alt="Pain gaming">
+            <div class="conteudo">
+                <h2>Pain gaming</h2>
+                <p>Uma equipe brasileira de esportes eletrônicos, fundada em 2010 como time de Dota (DotA) por Arthur
+                    "PAADA" Zarzur, ex-jogador profissional do game. Atualmente, temos equipes que disputam League of
+                    Legends, Counter-Strike: Global Offensive e Free Fire.</p>
+                <a href="https://twitter.com/paiNGamingBR?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                    class="square">Veja Mais</a>
+            </div>
+        </div>
+    </div>
+    <center>
+        <p class="e-sports">Times Estrangeiros</p>
+    </center>
+    <div class="card-container">
+        <div class="card">
+            <img src="img/liquid23.png" alt="liquid">
+            <div class="conteudo">
+                <h2>Team Liquid</h2>
+                <p>A Team Liquid, uma das mais tradicionais organizações de esports do mundo, inaugurou nesta terça (2)
+                    sua 'facility' em São Paulo. O prédio de 13 andares é a maior instalação da organização no mundo,
+                    feita para abrigar jogadores de várias categorias e fornecer a melhor estrutura para treinar,
+                    competir e criar conteúdo.</p>
+                <a href="https://loja.teamliquid.com.br/" class="square">Veja
+                    Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/g2.png" alt="g2">
+            <div class="conteudo">
+                <h2>G2</h2>
+                <p>O que é G2 Esports?
+                    G2 Esports (Rainbow Six: Siege) | Software | TechTudo
+                    Conheça a G2 Esports, equipe que domina o cenário competitivo de Rainbow Six: Siege. A G2 Esports é
+                    uma organização espanhola de esportes eletrônicos fundada em 2013 por Carlos "ocelote" Rodriguez.
+                </p>
+                <a href="https://g2esports.com/" class="square">Veja Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/t1.png" alt="t1">
+            <div class="conteudo">
+                <h2>T1</h2>
+                <p>T1 (anteriormente conhecida como SK Telecom T1 ou SKT T1) é uma organização sul-coreana de esportes
+                    eletrônicos operada pela T1 Entertainment & Sports, uma joint venture entre a SK Telecom e a Comcast
+                    Spectacor.</p>
+                <a href="https://www.t1.gg/" class="square">Veja Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/faze.png" alt="faze">
+            <div class="conteudo">
+                <h2>Faze</h2>
+                <p>FaZe Clan, ou simplesmente FaZe, é uma organização profissional de esportes eletrônicos e
+                    entretenimento com sede em Los Angeles, Califórnia, Estados Unidos.</p>
+                <a href="https://fazeclan.com/" class="square">Veja Mais</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
